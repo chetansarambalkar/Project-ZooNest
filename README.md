@@ -97,4 +97,7 @@ DB_NAME=zoo
 
 JWT_SECRET=yourjwttoken
 PORT=5000
+<<<<<<< HEAD
 
+=======
+>>>>>>> 802a48b205b3c8014a0c86e7024f45e6495b873f
