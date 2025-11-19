@@ -1,0 +1,233 @@
+
+/*.container {
+  margin-top:20px;
+  width: 900px;
+  height: 900px;
+  align-items: center;
+  background: #f6fefc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}*/
+/* Booking.css */
+/* General container styling */
+/* Root Variables for easier customization */
+:root {
+    --primary-color: #f2a956;
+    --secondary-color: #28a745;
+    --bg-light: #fffefe;
+    --bg-lightest: #f7f9fd;
+    --bg-table: rgb(226, 232, 248);
+    --shadow-light: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-heavy: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    --error-color: red;
+    --success-color: #28a745;
+    --button-hover-bg: #95bee9;
+    --focus-border-color: #007bff;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container */
+  .booking-container {
+    width: 55%;
+    margin: 60px auto;
+    background: var(--bg-light);
+    padding: 65px;
+    box-shadow: var(--shadow-heavy);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  .booking-container:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Ticket Rates Table */
+  .ticket-rates {
+    margin-bottom: 30px;
+    background: var(--bg-table);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-light);
+  }
+  
+  .ticket-rates h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 15px;
+    font-weight: 800;
+  }
+  
+  .ticket-rates table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .ticket-rates th,
+  .ticket-rates td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ticket-rates th {
+    background: var(--primary-color);
+    color: white;
+  }
+  
+  .ticket-rates th:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  .ticket-rates td {
+    background: #f1f1f1;
+  }
+  
+  .ticket-rates td:hover {
+    background: #e0efff;
+  }
+  
+  /* Booking Form */
+  .booking-form {
+    background: var(--bg-lightest);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s ease;
+  }
+  
+  .booking-form h2 {
+    text-align: center;
+    color: #433d77;
+    margin-bottom: 20px;
+    font-weight: 800;
+  }
+  
+  /* Input Styling */
+  .booking-form input {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .booking-form input:focus {
+    border-color: var(--focus-border-color);
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+    background-color: #f0f8ff;
+  }
+  
+  /* Label Styling */
+  .booking-form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #333;
+  }
+  
+  /* Total Price */
+  .booking-form h3 {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--secondary-color);
+    font-size: 20px;
+  }
+  
+  /* Book Now Button */
+  .book-btn {
+    margin-left: 150px;
+    width: 50%;
+    padding: 14px;
+    background: #dfe7ef;
+    color: rgb(36, 20, 20);
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .book-btn:hover {
+    background: var(--button-hover-bg);
+    transform: scale(1.05);
+  }
+  
+  .book-btn:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(204, 8, 204, 0.6);
+  }
+  
+  /* Error Messages */
+  .error {
+    color: var(--error-color);
+    font-size: 14px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+  }
+  
+  /* Success Message */
+  .success-message {
+    text-align: center;
+    color: #fff;
+    background: var(--success-color);
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .booking-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .ticket-rates table,
+    .booking-form input,
+    .book-btn {
+      font-size: 16px;
+    }
+  
+    .ticket-rates th,
+    .ticket-rates td {
+      padding: 12px 8px;
+    }
+  }
+  
+  /* More Interactive Button Effects */
+  .book-btn:active {
+    transform: scale(0.98);
+  }
+  
+  .book-btn:disabled {
+    background-color: #c9c9c9;
+    cursor: not-allowed;
+  }
+  
+  

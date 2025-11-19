@@ -1,0 +1,78 @@
+/* styles.css */
+
+/* styles.css */
+
+/* General container to center and control the layout */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack everything vertically */
+    align-items: center; /* Center the content horizontally */
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Title styling for 'Welcome to BonkoZoo' */
+  .title {
+    font-size: 3rem;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px; /* Space between title and content */
+  }
+  
+  /* Highlight the 'BonkoZoo' part in red */
+  .highlight {
+    color: #e74c3c;
+  }
+  
+  /* Main content section to hold all columns */
+  .content {
+    display: flex;
+    flex-direction: column; /* Stack content sections vertically */
+    gap: 40px; /* Space between each content section */
+    width: 100%;
+  }
+  
+  /* Styling for each column */
+  .column {
+    display: flex;
+    flex-direction: column; /* Stack image, title, and description in a column */
+    align-items: center; /* Center each section horizontally */
+    text-align: center;
+    gap: 10px; /* Space between title and description */
+  }
+  
+  /* Image styling for each column */
+  .column-image {
+    width: 100%;
+    max-width: 500px; /* Limit the image size */
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Styling for section titles like 'We are Changing' */
+  .section-title {
+    font-size: 1.8rem;
+    color: #2980b9;
+    margin-bottom: 10px; /* Space below each title */
+  }
+  
+  /* Styling for descriptions under each section */
+  .section-description {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    max-width: 800px; /* Prevent text from stretching too wide */
+    line-height: 1.6;
+  }
+  
+  /* Add some padding at the bottom of the last section */
+  .last-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 40px;
+  }
+  
+  

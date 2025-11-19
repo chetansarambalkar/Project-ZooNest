@@ -1,0 +1,140 @@
+
+/*-------------------------------------------------------------------------------*/
+/* src/ImageSlider.css */
+/* Container for the slider */
+/* Gallery Title */
+.text-gallary {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    margin-top: 20px;
+    color: #0f3763;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Slider Container */
+  .slider {
+    position: relative;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1000px;
+    overflow: hidden;
+    background-color: #fdfeff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Styling for the image */
+  .slider-image {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    background-color: #fdfeff;
+  }
+  
+  /* Adding slight zoom effect on hover */
+  .slider:hover .slider-image {
+    transform: scale(1.02);
+  }
+  
+  /* Slider Buttons */
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 12px 18px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .slider-button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateY(-50%) scale(1.1);
+  }
+  
+  /* Positioning for Previous and Next buttons */
+  .prev {
+    left: 15px;
+  }
+  
+  .next {
+    right: 15px;
+  }
+  
+  /* View Gallery Button */
+  .view {
+    display: block;
+    width: fit-content;
+    margin: 40px auto;
+    padding: 15px 40px;
+    font-size: 22px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #cfd3d5, #9db4c3);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+  }
+  
+  .view:hover {
+    background: linear-gradient(135deg, #a7e39f, #65d064);
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .text-gallary {
+      font-size: 40px;
+    }
+  
+    .slider {
+      width: 95%;
+    }
+  
+    .slider-image {
+      height: 400px;
+    }
+  
+    .slider-button {
+      font-size: 1.5rem;
+      padding: 8px 12px;
+    }
+  
+    .view {
+      font-size: 18px;
+      padding: 12px 30px;
+    }
+  }
+  
+  /* Keyframe Animation for Fade-In Effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  

@@ -1,0 +1,88 @@
+/* General Section Styling */
+.event-section {
+  padding: 2rem;
+  background-color: #fdfdfd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title Styling */
+.event-title {
+  font-size: 2.2rem;
+  color: #2b2b2b;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+/* Loading & No Events Text */
+.loading-text,
+.no-events-text {
+  text-align: center;
+  color: #888;
+  font-size: 1.2rem;
+}
+
+/* Grid Layout: 2 Columns */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Card Styling with No Shadow */
+.event-card {
+  background-color: #fff;
+  border: 2px solid #e0e0e0; /* Cleaner border */
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.event-card:hover {
+  border-color: #ced3f1; /* Accent border on hover */
+  background-color: #f9f9ff;
+  transform: translateY(-4px) scale(1.01); /* Light pop */
+}
+
+/* Event Image */
+.event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  border-bottom: 1px solid #eee;
+}
+
+.event-card:hover .event-image {
+  opacity: 0.9;
+}
+
+/* Event Details */
+.event-details {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.event-name {
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.event-date {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+}

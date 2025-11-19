@@ -1,0 +1,157 @@
+
+/* Contact Page Container */
+/* Contact Page Styles */
+
+/* General Styles */
+
+
+/* Contact Container */
+.contact-container {
+    width: 100%;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  /* Contact Info Section */
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 40px;
+  }
+  
+  .info-box {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .info-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon {
+    font-size: 40px;
+    color: #ff9800;
+    margin-bottom: 10px;
+  }
+  
+  .info-box p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  /* Contact Form Box */
+  .contact-box {
+    background: #fff;
+    padding: 40px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Form Title */
+  .contact-box h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* Form Row */
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .form-row input {
+    width: 48%;
+  }
+  
+  /* Input Fields */
+  input,
+  textarea {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    background: #f9f9f9;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Input Focus Effect */
+  input:focus,
+  textarea:focus {
+    border-color: #ff9800;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(255, 152, 0, 0.4);
+  }
+  
+  /* Textarea */
+  textarea {
+    height: 120px;
+    resize: none;
+    margin-top: 10px;
+  }
+  
+  /* Checkbox */
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .checkbox-group input {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Button Hover Effect */
+  .submit-btn:hover {
+    background: linear-gradient(135deg, #ff5722, #ff9800);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-info {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .form-row input {
+      width: 100%;
+    }
+  }
+  
+  

@@ -1,0 +1,155 @@
+
+/*about page c------------------------------------------------------------------------------ss*/
+/* Main Container */
+/* General Styling */
+
+
+/* Global styles */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 10%;
+    background-color: #f8f8f8;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Welcome Section */
+  .welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .left-column {
+    flex: 1;
+  }
+  
+  .left-column h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .left-column p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .live-cam-btn {
+    display: inline-flex;
+    align-items: center;
+    background: #ff8c00;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .live-cam-btn:hover {
+    background: #1100ff;
+    transform: scale(1.05);
+  }
+  
+  .play-icon {
+    margin-right: 8px;
+    font-size: 20px;
+  }
+  
+  .right-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Image Styling - Equal Heights */
+  .welcome-image,
+  .mission-image {
+    max-width: 90%;
+    height: 350px; /* Set equal height for both images */
+    object-fit: cover; /* Ensures images maintain aspect ratio without stretching */
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Hover effect: Zoom-in and Shadow */
+  .welcome-image:hover,
+  .mission-image:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Mission Section */
+  .mission-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mission-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .mission-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .mission-list li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .mission-list li::before {
+    content: '✔';
+    color: #28a745;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .welcome-section, .mission-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .right-column {
+      order: -1;
+    }
+  
+    .welcome-image, .mission-image {
+      max-width: 100%;
+      height: auto; /* Adjust height for responsiveness */
+    }
+  }
+  
+  
+  

@@ -1,0 +1,408 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*information bar*/
+.upper-header {
+  background-color: #f5f2f0;  /* Light background color */
+  padding: 30px;
+  
+}
+.navbar-logo {
+  height: 70px; /* Adjust as necessary */
+  width:70px;
+  margin-right:5px; /* Space between logo and text */
+  vertical-align: middle; /* Aligns the logo with the text */
+  border-radius: 100%;
+  margin-bottom: 8px;
+}
+.address-logo {
+  height: 50px; /* Adjust as necessary */
+  width:50px;
+  margin-right:5px; /* Space between logo and text */
+  vertical-align: middle; /* Aligns the logo with the text */
+  border-radius: 100%;
+  margin-left: 80px;
+  border-color: orangered;
+}
+
+.national, .zoo {
+  font-size: 45px; /* Adjust text size */
+  font-weight: 1000; /* Make the text bold */
+  display: inline; /* Ensures text appears inline */
+  margin-right: 5px; /* Optional: Adds space between "National" and "Zoo" */
+  letter-spacing: 0.1px 
+}
+
+.national {
+  color: #182c18; /* Choose the color for "National" */
+}
+
+.zoo {
+  color: #6f8e0b; /* Choose the color for "Zoo" */
+}
+.add-name,.add-loc
+{
+  font-size:20px; /* Adjust text size */
+  font-weight: 600; /* Make the text bold */
+  display: inline; /* Ensures text appears inline */
+  margin-right: 5px; /* Optional: Adds space between "National" and "Zoo" */
+  letter-spacing: 0.1px;
+  margin-bottom:20px;
+  
+}
+.add-name{
+  color: #e8781d; /* Choose the color for "National" */
+}
+
+.add-loc {
+  color: #e6862d; /* Choose the color for "Zoo" */
+}
+.contact-name,.contact-no
+{
+  font-size:20px; /* Adjust text size */
+  font-weight: 600; /* Make the text bold */
+  display: inline; /* Ensures text appears inline */
+  margin-right: 5px; /* Optional: Adds space between "National" and "Zoo" */
+  letter-spacing: 0.1px;
+  margin-bottom:20px;
+  
+}
+.contact-name{
+  color: #e8781d; /* Choose the color for "National" */
+}
+
+.contact-no {
+  color: #e6862d; /* Choose the color for "Zoo" */
+}
+.brand {
+  font-size: 34px;
+  font-weight: bold;
+  text-shadow: #d18d0f;
+  margin-left: 100px;
+}
+.buy-tickets
+{
+  height: 50px; 
+  width:200px;
+  border-radius: 5%;
+  margin-bottom: 8px;
+  color: #3d0e0e;
+  background-color: rgb(241, 198, 245);
+  font-size:20px; 
+  margin-left: 50px;
+  font-weight:900;
+  border: 2px solid #6a6c4a; /* Blue border */
+  
+}
+.buy-tickets a {
+  color: rgb(73, 74, 47);
+  text-decoration: none;
+}
+.buy-tickets a:hover {
+  color: #3ad422;
+  transform: scale(2.05); /* Scale the image on hover */
+}
+.buy-tickets:hover {
+  transform: scale(1.11); /* Increase the scale on hover */
+}
+
+/*navbar*/
+/* Navbar styling */
+/* Navbar */
+/* Navbar */
+.navbar {
+  background-color: #000000a2;
+  color: #fffdfd;
+  padding: 25px 0; /* Equal padding for top and bottom */
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  height: 70px; /* Fixed height to ensure equal spacing */
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%; /* Ensures full height usage */
+  padding: 0 20px;
+}
+
+/* Menu Toggle (for mobile) */
+.menu-toggle {
+  display: none;
+  background: none;
+  color: white;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Navbar Menu */
+.navbar-menu {
+  display: flex;
+  align-items: center;  
+  list-style: none;
+  font-size: 22px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 100px; /* Equal margin from the left */
+  gap: 10px; /* Ensures equal spacing between items */
+  height: 100%; /* Ensures menu takes full navbar height */
+}
+
+/* Navbar Items */
+.navbar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensures equal height for all items */
+  padding: 0 15px; /* Horizontal padding */
+}
+
+/* Navbar Links */
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.navbar-item a:hover {
+  color: #ff003c;
+  transform: scale(1.15); /* Slightly enlarges text */
+}
+
+/* Profile Section */
+.profile-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Pushes profile to the right */
+  margin-right: 20px;
+  cursor: pointer;
+  height: 100%;
+}
+
+/* Profile Container */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: border-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.profile-img:hover {
+  border-color: #ffcc00;
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Profile Name */
+.profile-name {
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.profile-name:hover {
+  color: #ffcc00;
+}
+
+/* Profile Dropdown Menu */
+/* Hidden by default; when the "open" class is added, it becomes visible */
+/* Profile Dropdown Menu */
+
+/* Profile Dropdown Menu */
+.profile-menu {
+  position: absolute;
+  top: 30px; /* Ensures dropdown appears below the profile image */
+  right: 0;
+  background-color: #000000a2; /* Matching navbar background */
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+  text-align: right; /* Aligns text (including button) to the right */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  display: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  flex-direction: column;
+  align-items: center; /* Ensures contents align to the right */
+  z-index: 1100; /* Keeps it above other elements */
+}
+
+/* Ensure the dropdown appears below the profile image */
+.profile-menu.open {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Logout Button */
+.logout-btn {
+  background-color: #000000a2; /* Matching navbar background */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 0px;
+  width: auto; /* Adjust width based on content */
+  text-align: center; /* Align text inside button to the right */
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.logout-btn:hover {
+  background-color: #ff003c; /* Highlight on hover */
+  transform: scale(1.05);
+}
+
+/* Auth Links */
+.auth-links {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.auth-btn {
+  background-color: #d9f6f6;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.auth-btn:hover {
+  background-color: #89e75d;
+  transform: scale(1.12);
+  text-decoration: none;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 10px 0;
+    align-items: center;
+  }
+  
+  .navbar-menu.open {
+    display: flex;
+  }
+  
+  .profile-section {
+    margin-left: auto;
+  }
+}
+
+/* Navbar Menu */
+/* Navbar */
+
+
+/* Ensure no horizontal scrollbar */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  width: 100%;
+  height: 100%;
+}
+.background-slider-container {
+  margin: 0;
+  width: 100%;
+  height: 550px;
+}
+.background-slider-container .image-gallery {
+  height: 50%;
+}
+
+.background-slider-container .image-gallery-slide img {
+  object-fit: cover;
+  width: 100%;
+  height: 550px;
+}
+/* Customize the bullet (dot) indicators */
+.image-gallery-bullets {
+  bottom: 20px; /* Adjust position */
+}
+
+.image-gallery-bullets .image-gallery-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background: #ccc; /* Default bullet color */
+  border-radius: 50%;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Active bullet style */
+.image-gallery-bullets .image-gallery-bullet.active {
+  background: #ff5733; /* Highlight active bullet */
+  transform: scale(1.3); /* Enlarge active bullet */
+}
+
+/* about us to css */
+

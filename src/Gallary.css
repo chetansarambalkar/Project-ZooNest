@@ -1,0 +1,141 @@
+
+/* Basic styling for the search container */
+/* Main container */
+/* Center the search bar */
+
+
+/* General Gallery Styling */
+.gallery-container {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    position: relative;
+    width: 80%; /* Matches gallery-card width */
+    max-width: 800px; /* Same max-width as gallery-card */
+    margin: 0 auto 20px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .search-bar input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Search Suggestions */
+  .suggestion-list {
+    position: absolute;
+    width: 100%;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    margin-top: 5px;
+    overflow: hidden;
+  }
+  
+  .suggestion-item {
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: #333;
+  }
+  
+  .suggestion-item:hover {
+    background: #007bff;
+    color: white;
+  }
+  
+  /* Gallery Layout */
+  .gallery-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  /* Gallery Card Styling */
+  .gallery-card {
+    display: flex;
+    width: 80%; /* Matches search bar width */
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-card:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Image Styling */
+  .gallery-card img {
+    width: 50%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  /* Information Styling */
+  .gallery-info {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .gallery-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .gallery-info p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Alternate Layout for Zig-Zag Effect */
+  .gallery-card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .search-bar,
+    .gallery-card {
+      width: 95%;
+    }
+  
+    .gallery-card {
+      flex-direction: column;
+    }
+  
+    .gallery-card img,
+    .gallery-info {
+      width: 100%;
+    }
+  }
+  
